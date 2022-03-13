@@ -10,6 +10,18 @@ type DataMember struct {
 	JudulBuku string
 	LamaPeminjaman int
 }
+func DataPengunjung(){
+	datamember := DataMember{
+		Nama: "Damian Sitanggang",
+		StatusMember: false,
+		PinjamBuku: true,
+		JudulBuku: "Buku Sains",
+		LamaPeminjaman: 5,
+	}
+	fmt.Println(datamember)
+}
+
+
 // function
 func Welcome() {
 	fmt.Println("Perpustakaan Kota")
@@ -24,12 +36,9 @@ func (member DataMember) StructMethod() {
 	fmt.Println(member.Nama)
 }
 
-
-
-
 // funtion dengan return value
-func Dendabuku(hargaDenda, jumlahHari int) int{
-	denda := hargaDenda * jumlahHari
+func Dendabuku(hargaDenda, LamaPeminjaman int) int{
+	denda := hargaDenda * LamaPeminjaman
 	return denda
 	}
 
@@ -39,7 +48,16 @@ func PowerCal(I int, V int) (int, int) {
 	Resistor := V % I
 	return Power, Resistor
 }
-
-
-
-
+// Anonymous Struct
+func AnonymousDataBuku() {
+	DataBuku := struct {
+	Buku string
+	Judul string
+	StatusBuku bool
+	}{
+		Buku: "Novel",
+		Judul: "Harry Potter",
+		StatusBuku: true,
+	}
+	fmt.Println(DataBuku)	
+}
