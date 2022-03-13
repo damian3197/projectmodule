@@ -19,8 +19,15 @@ func Welcome() {
 func Verifikasi(namaDepan string, namaBelakang string) {
 	fmt.Println("Verifikasi", namaDepan, namaBelakang, "Selamat Datang Di Perpustakaan")
 }
+// Struct Method
+func (member DataMember) StructMethod() {
+	fmt.Println(member.Nama)
+}
 
-// funtion return value
+
+
+
+// funtion dengan return value
 func Dendabuku(hargaDenda, jumlahHari int) int{
 	denda := hargaDenda * jumlahHari
 	return denda
