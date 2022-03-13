@@ -56,7 +56,7 @@ func AnonymousDataBuku() {
 	StatusBuku bool
 	}{
 		Buku: "Novel",
-		Judul: "Harry Potter",
+		Judul: "Olympus",
 		StatusBuku: true,
 	}
 	fmt.Println(DataBuku)	
